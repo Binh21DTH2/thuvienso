@@ -13,6 +13,11 @@ namespace ThuVienSo.Controllers
             return View();
         }
 
+        public IActionResult CaNhan()
+        {
+            return View();
+        }
+
         public IActionResult QuenMatKhau()
         {
             return View();

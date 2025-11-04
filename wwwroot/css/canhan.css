@@ -1,8 +1,7 @@
 ﻿
-.container {
-    margin-top: 50px;
+.CaNhanBody{
+    padding:60px 30px 30px 30px;
 }
-
 .section-title {
     margin-bottom: 20px;
 }
@@ -157,9 +156,11 @@
     font-size: 14px;
     font-weight: 500;
     color: #111827;
+    word-wrap:break-word;
+    word-break:break-word;
 }
 
-@@media (max-width: 767px) {
+@media (max-width: 767px) {
     .avatar {
         width: 96px;
         height: 96px;
