@@ -12,5 +12,10 @@ namespace ThuVienSo.Controllers
         {
             return View();
         }
+
+        public IActionResult QuenMatKhau()
+        {
+            return View();
+        }
     }
 }
