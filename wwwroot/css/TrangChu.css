@@ -19,23 +19,37 @@
 
 /* ========== HERO SECTION ========== */
 .hero {
-    background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') center/cover no-repeat;
     position: relative;
     color: white;
     text-align: center;
     padding: 40px 15px;
+    overflow: hidden;
 }
 
-    .hero::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.45);
-    }
+/* Video nền */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
 
+/* Lớp phủ tối */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Nội dung */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -51,6 +65,7 @@
     font-size: 17px;
     margin-bottom: 25px;
 }
+
 
 /* ========== FEATURES ========== */
 .features {
@@ -344,15 +359,6 @@
         transition: all 0.3s ease;
     }
 
-/* Hover: icon nổi bật */
-.stat-item:hover .stat-icon {
-    background: #104e8b;
-    transform: scale(1.1);
-}
-
-    .stat-item:hover .stat-icon i {
-        color: #fff;
-    }
 
 /* --- Số liệu và mô tả --- */
 .stat-item h3 {
