@@ -28,7 +28,7 @@
             revealTitles(); // gọi lần đầu để hiện phần trên cùng
         });
     </script>
-
+    <div class="home-background">
     <!-- HERO -->
     <section class="hero">
         <video autoplay muted loop playsinline class="hero-video">
@@ -250,35 +250,45 @@
         </div>
     </div>
 
-    <!-- ==================== CARD THỐNG KÊ ==================== -->
-    <div class="row text-center cardcouter">
-        <div class="stats-inline">
-            <!-- Card 1 -->
+    <div class="cardcounter">
+        <div class="row text-center stats-inline">
             <div class="col-sm-3">
-                <div class="stat-iconn">
-                    <i class="glyphicon glyphicon-book"></i>
+                <div class="stat-content">
+                    <div class="stat-iconn">
+                        <i class="glyphicon glyphicon-book"></i>
+                    </div>
+                    <div class="stat-number">
+                        <h3 class="counter" data-target="12450">0</h3>
+                    </div>
+                    <p>Ấn phẩm & Tài liệu</p>
                 </div>
-                <h3 class="counter" data-target="12450">0</h3>
-                <p>Ấn phẩm & Tài liệu</p>
             </div>
-            <!-- Card 2 -->
             <div class="col-sm-3">
-                <div class="stat-iconn">
-                    <i class="glyphicon glyphicon-user"></i>
+                <div class="stat-content counter-border">
+                    <div class="stat-iconn">
+                        <i class="glyphicon glyphicon-user"></i>
+                    </div>
+                    <div class="stat-number">
+                        <h3 class="counter" data-target="8200">0</h3>
+                    </div>
+                    <p>Người dùng đăng ký</p>
                 </div>
-                <h3 class="counter" data-target="8200">0</h3>
-                <p>Người dùng đăng ký</p>
             </div>
-            <!-- Card 3 -->
             <div class="col-sm-3">
-                <div class="stat-iconn">
-                    <i class="glyphicon glyphicon-download-alt"></i>
+                <div class="stat-content counter-border">
+                    <div class="stat-iconn">
+                        <i class="glyphicon glyphicon-download-alt"></i>
+                    </div>
+                    <div class="stat-number">
+                        <h3 class="counter" data-target="35600">0</h3>
+                    </div>
+                    <p>Lượt tải tài liệu</p>
                 </div>
-                <h3 class="counter" data-target="35600">0</h3>
-                <p>Lượt tải tài liệu</p>
             </div>
         </div>
     </div>
+
+
     <!--===========THAM GIA CÙNG CHÚNG TÔI===========-->
     <section id="newsletter" class="newsletter">
         <div id="newsletter-content" class="newsletter-content">
@@ -290,6 +300,6 @@
             </form>
         </div>
     </section>
-
+    </div>
 </body>
 </html>
